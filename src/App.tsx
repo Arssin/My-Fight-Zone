@@ -1,9 +1,10 @@
+import { Welcome } from './components/Welcome/Welcome'
 import './App.scss'
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">Welcome</header>
+            <Welcome />
         </div>
     )
 }
