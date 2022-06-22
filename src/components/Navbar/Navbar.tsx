@@ -22,7 +22,7 @@ export function NavigationBar() {
                     className="navbar"
                 >
                     <Container fluid>
-                        <Navbar.Brand href="/start">My Fight Zone</Navbar.Brand>
+                        <Navbar.Brand href="/home">My Fight Zone</Navbar.Brand>
                         <Navbar.Toggle
                             aria-controls={`offcanvasNavbar-expand-${expand}`}
                         />
@@ -40,7 +40,7 @@ export function NavigationBar() {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="nav">
-                                    <Nav.Link href="/start">Home</Nav.Link>
+                                    <Nav.Link href="/home">Home</Nav.Link>
                                     <Nav.Link href="blog">Blog</Nav.Link>
                                     <Nav.Link href="blog">Shop</Nav.Link>
                                     <NavDropdown
