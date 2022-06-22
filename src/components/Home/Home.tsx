@@ -2,11 +2,11 @@ import { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
-import Button from 'react-bootstrap/Button'
+import Pagination from 'react-bootstrap/Pagination'
 import bjj from '../../images/BJJ.png'
 import sherdog from '../../images/Sherdog.png'
 import pictureCard3 from '../../images/pictureCard3.jpg'
-import pictureCard1 from '../../images/pictureCard1.jpg'
+import pictureCard from '../../images/pictureCard.jpg'
 import pictureCard4 from '../../images/pictureCard4.jpg'
 import pictureCard6 from '../../images/pictureCard6.jpg'
 import wrestling from '../../images/Wrestling.jpg'
@@ -17,6 +17,16 @@ export function Home() {
 
     const handleSelect = (selectedIndex: number) => {
         setIndex(selectedIndex)
+    }
+
+    let active = 2
+    let items = []
+    for (let number = 1; number <= 5; number++) {
+        items.push(
+            <Pagination.Item key={number} active={number === active}>
+                {number}
+            </Pagination.Item>
+        )
     }
 
     return (
@@ -72,7 +82,7 @@ export function Home() {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src={pictureCard1} />
+                    <Card.Img variant="top" src={pictureCard} />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                         <Card.Text>

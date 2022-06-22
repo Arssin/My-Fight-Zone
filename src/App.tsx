@@ -19,7 +19,6 @@ function App() {
                     <Route path="/shop" element={<Shop />} />
                 </Routes>
             </BrowserRouter>
-
             <Footer />
         </div>
     )
