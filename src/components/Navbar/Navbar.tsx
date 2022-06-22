@@ -8,6 +8,7 @@ import {
     FormControl,
     Offcanvas,
 } from 'react-bootstrap'
+import './Navbar.scss'
 
 export function NavigationBar() {
     return (
@@ -18,10 +19,10 @@ export function NavigationBar() {
                     bg="dark"
                     variant="dark"
                     expand={expand}
-                    className="mb-3"
+                    className="navbar"
                 >
                     <Container fluid>
-                        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+                        <Navbar.Brand href="/home">My Fight Zone</Navbar.Brand>
                         <Navbar.Toggle
                             aria-controls={`offcanvasNavbar-expand-${expand}`}
                         />
@@ -38,22 +39,28 @@ export function NavigationBar() {
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="#action2">Link</Nav.Link>
+                                <Nav className="nav">
+                                    <Nav.Link href="/home">Home</Nav.Link>
+                                    <Nav.Link href="blog">Blog</Nav.Link>
+                                    <Nav.Link href="blog">Shop</Nav.Link>
                                     <NavDropdown
-                                        title="Dropdown"
+                                        title="Sport"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
                                     >
                                         <NavDropdown.Item href="#action3">
-                                            Action
+                                            Brazilian Jiu-Jitsu
                                         </NavDropdown.Item>
+                                        <NavDropdown.Divider />
                                         <NavDropdown.Item href="#action4">
-                                            Another action
+                                            MMA
                                         </NavDropdown.Item>
                                         <NavDropdown.Divider />
                                         <NavDropdown.Item href="#action5">
-                                            Something else here
+                                            Wrestling
+                                        </NavDropdown.Item>
+                                        <NavDropdown.Divider />
+                                        <NavDropdown.Item href="#action5">
+                                            Judo
                                         </NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>
