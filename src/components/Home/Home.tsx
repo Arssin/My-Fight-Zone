@@ -13,7 +13,7 @@ export function Home() {
     }
 
     return (
-        <div>
+        <div className="main-container">
             <Carousel
                 activeIndex={index}
                 onSelect={handleSelect}
@@ -23,7 +23,7 @@ export function Home() {
                     <img className="picture" src={bjj} alt="First slide" />
                     <div className="shadow" />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
+                        <h3 className="title">Felipe Pena suspended!</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carouselItem">
@@ -34,14 +34,14 @@ export function Home() {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
+                        <h3 className="title">Time for wrestling!</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className="carouselItem">
                     <img className="picture" src={sherdog} alt="Third slide" />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                        <h3 className="title">Check MMA records on sherdog!</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
