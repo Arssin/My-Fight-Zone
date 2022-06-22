@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import Card from 'react-bootstrap/Card'
+import CardGroup from 'react-bootstrap/CardGroup'
 import Button from 'react-bootstrap/Button'
 import bjj from '../../images/BJJ.png'
 import sherdog from '../../images/Sherdog.png'
-import pictureCard from '../../images/pictureCard.jpg'
+import pictureCard3 from '../../images/pictureCard3.jpg'
+import pictureCard1 from '../../images/pictureCard1.jpg'
+import pictureCard4 from '../../images/pictureCard4.jpg'
+import pictureCard6 from '../../images/pictureCard6.jpg'
 import wrestling from '../../images/Wrestling.jpg'
 import './Home.scss'
 
@@ -49,19 +53,73 @@ export function Home() {
                 </Carousel.Item>
             </Carousel>
             <div> mAIN</div>
-            <div>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={pictureCard} />
+
+            <CardGroup>
+                <Card>
+                    <Card.Img variant="top" src={pictureCard3} />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>Card title</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the cards content.
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
                         </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
                     </Card.Body>
+                    <Card.Footer>
+                        <small className="text-muted">
+                            Last updated 3 mins ago
+                        </small>
+                    </Card.Footer>
                 </Card>
-            </div>
+                <Card>
+                    <Card.Img variant="top" src={pictureCard1} />
+                    <Card.Body>
+                        <Card.Title>Card title</Card.Title>
+                        <Card.Text>
+                            This card has supporting text below as a natural
+                            lead-in to additional content.{' '}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <small className="text-muted">
+                            Last updated 3 mins ago
+                        </small>
+                    </Card.Footer>
+                </Card>
+            </CardGroup>
+            <CardGroup>
+                <Card>
+                    <Card.Img variant="top" src={pictureCard4} />
+                    <Card.Body>
+                        <Card.Title>Card title</Card.Title>
+                        <Card.Text>
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <small className="text-muted">
+                            Last updated 3 mins ago
+                        </small>
+                    </Card.Footer>
+                </Card>
+                <Card>
+                    <Card.Img variant="top" src={pictureCard6} />
+                    <Card.Body>
+                        <Card.Title>Card title</Card.Title>
+                        <Card.Text>
+                            This card has supporting text below as a natural
+                            lead-in to additional content.{' '}
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <small className="text-muted">
+                            Last updated 3 mins ago
+                        </small>
+                    </Card.Footer>
+                </Card>
+            </CardGroup>
         </div>
     )
 }
