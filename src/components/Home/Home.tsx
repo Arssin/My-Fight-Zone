@@ -1,78 +1,20 @@
-import { useState } from 'react'
-import Carousel from 'react-bootstrap/Carousel'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
-import Pagination from 'react-bootstrap/Pagination'
 import { MainText } from './MainText/MainText'
-import bjj from '../../images/BJJ.png'
-import sherdog from '../../images/Sherdog.png'
+import { Carousels } from './Carousel/Carousel'
 import pictureCard3 from '../../images/pictureCard3.jpg'
 import pictureCard from '../../images/pictureCard.jpg'
 import pictureCard4 from '../../images/pictureCard4.jpg'
 import pictureCard6 from '../../images/pictureCard6.jpg'
-import wrestling from '../../images/Wrestling.jpg'
+
 import './Home.scss'
 
 export function Home() {
-    const [index, setIndex] = useState(0)
-
-    const handleSelect = (selectedIndex: number) => {
-        setIndex(selectedIndex)
-    }
-
-    let active = 2
-    let items = []
-    for (let number = 1; number <= 5; number++) {
-        items.push(
-            <Pagination.Item key={number} active={number === active}>
-                {number}
-            </Pagination.Item>
-        )
-    }
-
     return (
         <div className="main-container">
             <div className="container">
-                <Carousel
-                    activeIndex={index}
-                    onSelect={handleSelect}
-                    className="carousel-container"
-                >
-                    <Carousel.Item className="carouselItem">
-                        <img className="picture" src={bjj} alt="First slide" />
-                        <div className="shadow" />
-                        <Carousel.Caption>
-                            <h3 className="title">Felipe Pena suspended!</h3>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item className="carouselItem">
-                        <img
-                            className="picture"
-                            src={wrestling}
-                            alt="Second slide"
-                        />
-
-                        <Carousel.Caption>
-                            <h3 className="title">Time for wrestling!</h3>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item className="carouselItem">
-                        <img
-                            className="picture"
-                            src={sherdog}
-                            alt="Third slide"
-                        />
-
-                        <Carousel.Caption>
-                            <h3 className="title">
-                                Check MMA records on sherdog!
-                            </h3>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-
+                <Carousels />
                 <MainText />
-
                 <CardGroup>
                     <Card>
                         <Card.Img variant="top" src={pictureCard3} />
