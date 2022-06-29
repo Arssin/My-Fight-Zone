@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 import Pagination from 'react-bootstrap/Pagination'
+import { MainText } from './MainText/MainText'
 import bjj from '../../images/BJJ.png'
 import sherdog from '../../images/Sherdog.png'
 import pictureCard3 from '../../images/pictureCard3.jpg'
@@ -69,7 +70,8 @@ export function Home() {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <div> mAIN</div>
+
+                <MainText />
 
                 <CardGroup>
                     <Card>
