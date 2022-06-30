@@ -1,7 +1,22 @@
 .carousel-container {
+    @media (min-width: 768px) {
+        width: 90%;
+    }
+
+    @media (min-width: 1024px) {
+        width: 100%;
+    }
     .carouselItem {
         position: relative;
         height: 25vh;
+
+        @media (min-width: 768px) {
+            height: 35vh;
+        }
+
+        @media (min-width: 1024px) {
+            height: 45vh;
+        }
 
         .picture {
             height: 100%;
