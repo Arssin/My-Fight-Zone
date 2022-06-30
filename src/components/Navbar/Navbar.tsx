@@ -35,26 +35,45 @@ export function NavigationBar() {
                     <Offcanvas.Body>
                         <Nav className="nav">
                             <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="blog">Blog</Nav.Link>
+                            <Nav.Link href="blog">Blogs</Nav.Link>
                             <Nav.Link href="blog">Shop</Nav.Link>
                             <NavDropdown
-                                title="Sport"
+                                title="Rankings"
                                 id="offcanvasNavbarDropdown-expand-lg"
                             >
+                                <p className="sportTitle">MMA</p>
                                 <NavDropdown.Item href="#action3">
-                                    Brazilian Jiu-Jitsu
+                                    UFC
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action4">
-                                    MMA
+                                    KSW
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action4">
+                                    Sherdog
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
+                                <p className="sportTitle">BJJ</p>
+                                <NavDropdown.Item href="#action5">
+                                    IBJJF
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action5">
+                                    AJP
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <p className="sportTitle">Boxing</p>
+                                <NavDropdown.Item href="#action5">
+                                    Boxing
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <p className="sportTitle">Other</p>
+                                <NavDropdown.Item href="#action5">
+                                    Judo
+                                </NavDropdown.Item>
                                 <NavDropdown.Item href="#action5">
                                     Wrestling
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action5">
-                                    Judo
+                                    Muay Thai
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
