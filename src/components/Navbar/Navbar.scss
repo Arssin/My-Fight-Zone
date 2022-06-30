@@ -1,5 +1,5 @@
 .navbar {
-    height: 10%;
+    height: 10vh;
 }
 
 .offcanvas {
@@ -25,6 +25,7 @@
             display: flex;
             justify-content: flex-end;
             gap: 1.5rem;
+            font-size: 1.2em;
         }
     }
 
