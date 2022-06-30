@@ -8,9 +8,8 @@ import './Cards.scss'
 
 export function Cards() {
     return (
-        <>
-            {' '}
-            <CardGroup>
+        <div className="card-container">
+            <CardGroup className="card-group-one">
                 <Card>
                     <Card.Img variant="top" src={pictureCard3} />
                     <Card.Body>
@@ -43,7 +42,7 @@ export function Cards() {
                     </Card.Footer>
                 </Card>
             </CardGroup>
-            <CardGroup>
+            <CardGroup className="card-group-two">
                 <Card>
                     <Card.Img variant="top" src={pictureCard4} />
                     <Card.Body>
@@ -76,6 +75,6 @@ export function Cards() {
                     </Card.Footer>
                 </Card>
             </CardGroup>
-        </>
+        </div>
     )
 }

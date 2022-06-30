@@ -1,12 +1,25 @@
 .carousel-container {
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+
     .carouselItem {
         position: relative;
         height: 25vh;
+
+        @media (min-width: 768px) {
+            height: 35vh;
+        }
+
+        @media (min-width: 1024px) {
+            height: 45vh;
+        }
 
         .picture {
             height: 100%;
             width: 100%;
             padding: 5px;
+            border-radius: 20px;
         }
 
         .carousel-caption {
@@ -16,9 +29,13 @@
             .title {
                 padding: 0 10px;
                 display: inline-block;
-                background-color: rgba(63, 60, 60, 0.4);
+                background-color: rgba(63, 60, 60, 0.85);
                 font-size: 0.9em;
-                color: rgb(247, 238, 238);
+                color: rgb(236, 221, 221);
+
+                @media (min-width: 768px) {
+                    font-size: 1.9em;
+                }
             }
         }
     }
