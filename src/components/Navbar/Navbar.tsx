@@ -35,7 +35,7 @@ export function NavigationBar() {
                     <Offcanvas.Body>
                         <Nav className="nav">
                             <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="blog">Blogs</Nav.Link>
+                            <Nav.Link href="blog">Blog</Nav.Link>
                             <Nav.Link href="blog">Shop</Nav.Link>
                             <NavDropdown
                                 title="Rankings"
