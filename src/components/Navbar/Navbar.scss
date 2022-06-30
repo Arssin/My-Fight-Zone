@@ -7,14 +7,30 @@
         display: flex;
         justify-content: flex-end;
         gap: 0.8em;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             margin-bottom: 0;
         }
 
-        .dropdown-item:hover {
-            color: rgb(105, 105, 206);
+        .dropdown-item {
+            &:hover {
+                color: rgb(216, 175, 63);
+            }
         }
+    }
+
+    .offcanvas-body {
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.5rem;
+        }
+    }
+
+    .d-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
