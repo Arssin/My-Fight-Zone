@@ -42,38 +42,59 @@ export function NavigationBar() {
                                 id="offcanvasNavbarDropdown-expand-lg"
                             >
                                 <p className="sportTitle">MMA</p>
-                                <NavDropdown.Item href="#action3">
+                                <NavDropdown.Item
+                                    target="_blank"
+                                    href="https://www.ufc.com/rankings"
+                                >
                                     UFC
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">
+                                <NavDropdown.Item
+                                    target="_blank"
+                                    href="https://www.kswmma.com/rankings"
+                                >
                                     KSW
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">
-                                    Sherdog
+                                <NavDropdown.Item
+                                    target="_blank"
+                                    href="https://www.bellator.com/ranking"
+                                >
+                                    BELLATOR
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <p className="sportTitle">BJJ</p>
-                                <NavDropdown.Item href="#action5">
+                                <NavDropdown.Item
+                                    target="_blank"
+                                    href="https://ibjjf.com/2022-athletes-ranking"
+                                >
                                     IBJJF
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action5">
+                                <NavDropdown.Item
+                                    target="_blank"
+                                    href="https://ajptour.com/en/federation/1/ranking/season/5"
+                                >
                                     AJP
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <p className="sportTitle">Boxing</p>
-                                <NavDropdown.Item href="#action5">
+                                <NavDropdown.Item
+                                    target="_blank"
+                                    href="https://box.live/boxing-rankings/"
+                                >
                                     Boxing
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <p className="sportTitle">Other</p>
-                                <NavDropdown.Item href="#action5">
+                                <NavDropdown.Item
+                                    target="_blank"
+                                    href="https://www.ijf.org/wrl"
+                                >
                                     Judo
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action5">
+                                <NavDropdown.Item
+                                    target="_blank"
+                                    href="https://wrestlingtv.in/ranking/"
+                                >
                                     Wrestling
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action5">
-                                    Muay Thai
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
