@@ -1,0 +1,17 @@
+.clock {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+
+    .innerDiv {
+        background-color: white;
+        border-radius: 0.25rem;
+        width: 100%;
+        padding: 15px;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
+}

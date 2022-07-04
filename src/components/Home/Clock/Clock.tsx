@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import './Clock.scss'
 
 export function Clock() {
     const [clock, setClock] = useState<string>()
@@ -10,5 +11,9 @@ export function Clock() {
         }, 1000)
     }, [])
 
-    return <div>{clock}</div>
+    return (
+        <div className="clock">
+            <div className="innerDiv">⏰ {clock}</div>
+        </div>
+    )
 }
