@@ -1,5 +1,15 @@
 .navbar {
     height: 10vh;
+    background: linear-gradient(
+        90deg,
+        #6f7173 0%,
+        #313536 35%,
+        rgb(21, 22, 22) 100%
+    );
+}
+
+.bg-dark {
+    background-color: red;
 }
 
 .offcanvas {
@@ -37,7 +47,6 @@
 
     .sportTitle {
         text-align: center;
-
         background-color: rgba(224, 223, 223, 0.6);
     }
 }

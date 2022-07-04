@@ -12,13 +12,7 @@ import './Navbar.scss'
 
 export function NavigationBar() {
     return (
-        <Navbar
-            key="lg"
-            bg="dark"
-            variant="dark"
-            expand="lg"
-            className="navbar"
-        >
+        <Navbar key="lg" variant="dark" expand="lg" className="navbar">
             <Container fluid>
                 <Navbar.Brand href="/home">My Fight Zone</Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
