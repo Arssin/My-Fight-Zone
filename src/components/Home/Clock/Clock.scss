@@ -6,8 +6,7 @@
     .innerDiv {
         background-color: rgb(29, 27, 27);
         color: white;
-        border-radius: 0 0.25rem 0.25rem 0;
-        box-shadow: -1rem 0rem 1rem 0 rgb(29, 27, 27);
+        border-radius: 0 0 0.25rem 0.25rem;
         width: 100%;
         padding: 15px;
         height: 50%;
@@ -15,5 +14,10 @@
         justify-content: center;
         align-items: center;
         font-size: 2em;
+        box-shadow: 0rem 0rem 2rem 0.25rem rgb(29, 27, 27);
+        @media (min-width: 768px) {
+            border-radius: 0 0.25rem 0.25rem 0;
+            box-shadow: -1rem 0rem 1rem 0 rgb(29, 27, 27);
+        }
     }
 }
