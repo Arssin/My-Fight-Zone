@@ -22,4 +22,9 @@
             border-radius: 0.25rem;
         }
     }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+    }
 }
