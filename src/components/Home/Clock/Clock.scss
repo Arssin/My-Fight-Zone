@@ -1,14 +1,16 @@
 .clock {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
 
     .innerDiv {
-        background-color: white;
-        border-radius: 0.25rem;
+        background-color: rgb(29, 27, 27);
+        color: white;
+        border-radius: 0 0.25rem 0.25rem 0;
+        box-shadow: -1rem 0rem 1rem 0 rgb(29, 27, 27);
         width: 100%;
         padding: 15px;
-        height: 40%;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -11,8 +11,9 @@
         font-weight: 700;
         font-size: 1.4em;
     }
-}
 
-.card {
-    height: 100%;
+    .startCard {
+        background-color: rgb(29, 27, 27);
+        box-shadow: 1rem 0rem 2rem 0.25rem rgb(29, 27, 27);
+    }
 }

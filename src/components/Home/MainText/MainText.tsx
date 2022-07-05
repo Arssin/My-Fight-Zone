@@ -5,7 +5,7 @@ import './MainText.scss'
 export function MainText() {
     return (
         <div className="mainCard">
-            <Card bg="secondary" text="light">
+            <Card className="startCard" text="light">
                 <Card.Header>Hello in My Fight Zone!</Card.Header>
                 <Card.Body>
                     <Card.Text>
