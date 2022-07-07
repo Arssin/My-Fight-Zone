@@ -1,6 +1,9 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
+const api: string = process.env.REACT_APP_RAPID_API_KEY as string
+const host: string = process.env.REACT_APP_RAPID_API_HOST as string
+
 export function DataFetching() {
     const [data, setData] = useState<any[]>([])
 
@@ -8,9 +11,8 @@ export function DataFetching() {
         method: 'GET',
         url: 'https://current-ufc-rankings.p.rapidapi.com/',
         headers: {
-            'X-RapidAPI-Key':
-                'e688f0f446mshcaf999c07cd93e4p1343e8jsna813f3c75ecf',
-            'X-RapidAPI-Host': 'current-ufc-rankings.p.rapidapi.com',
+            'X-RapidAPI-Key': api,
+            'X-RapidAPI-Host': host,
         },
     }
 
@@ -26,20 +28,21 @@ export function DataFetching() {
             })
     }, [])
 
-    function topthree(value: any) {
-        return value <= 3
-    }
-
-    const kek = data.map((items) => items.fighters)
-    const heh = kek.map((kanyn) => kanyn[0].fullName)
-    const burak = heh.map((lul) => {
-        return <li>{lul}</li>
+    const fighters = data.map((items) => items.fighters)
+    const champions = fighters.map((object, index) => {
+        return (
+            <li key={index}>
+                {object[0].fullName}
+                <a href={`${object[0].url}`} key={object.id}>
+                    Profile
+                </a>
+            </li>
+        )
     })
-    console.log(heh)
-    // console.log(kek)
+
     return (
         <div>
-            <ul>{burak}</ul>
+            <ul>{champions}</ul>
         </div>
     )
 }
