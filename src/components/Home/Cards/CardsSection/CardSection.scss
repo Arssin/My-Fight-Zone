@@ -2,11 +2,24 @@
     order: 2;
     @media (min-width: 768px) {
         order: 1;
+        max-width: 70%;
     }
-}
 
-.card-group {
-    @media (min-width: 768px) {
-        gap: 0.8rem;
+    .card-group {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            gap: 0.8rem;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .images {
+        width: 80%;
     }
 }

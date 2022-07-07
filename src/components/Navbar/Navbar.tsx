@@ -82,7 +82,7 @@ export function NavigationBar() {
                                     target="_blank"
                                     href="https://www.ijf.org/wrl"
                                 >
-                                    Judo
+                                    Judo World Ranking
                                 </NavDropdown.Item>
                                 <NavDropdown.Item
                                     target="_blank"

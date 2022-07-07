@@ -9,9 +9,9 @@ import './CardSection.scss'
 export function CardSection() {
     return (
         <div className="cardSection">
-            <CardGroup className="card-group-one">
+            <CardGroup>
                 <Card>
-                    <Card.Img variant="top" src={pictureCard3} />
+                    <Card.Img className="images" src={pictureCard3} />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                         <Card.Text>
@@ -27,7 +27,7 @@ export function CardSection() {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src={pictureCard} />
+                    <Card.Img className="images" src={pictureCard} />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                         <Card.Text>
@@ -41,10 +41,8 @@ export function CardSection() {
                         </small>
                     </Card.Footer>
                 </Card>
-            </CardGroup>
-            <CardGroup className="card-group-two">
                 <Card>
-                    <Card.Img variant="top" src={pictureCard4} />
+                    <Card.Img className="images" src={pictureCard4} />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                         <Card.Text>
@@ -60,7 +58,7 @@ export function CardSection() {
                     </Card.Footer>
                 </Card>
                 <Card>
-                    <Card.Img variant="top" src={pictureCard6} />
+                    <Card.Img className="images" src={pictureCard6} />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>
                         <Card.Text>
