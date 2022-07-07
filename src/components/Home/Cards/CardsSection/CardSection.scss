@@ -1,12 +1,13 @@
 @import '../../../variables.scss';
 
 .cardSection {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: $main-container;
     order: 2;
     @media (min-width: 768px) {
         order: 1;
         max-width: 70%;
+        padding: 1rem;
     }
 
     .card-group {
@@ -21,8 +22,20 @@
             display: flex;
 
             @media (min-width: 768px) {
-                gap: 0.8rem;
                 flex-direction: row;
+            }
+
+            .card-body {
+                padding: 1rem 0 0 0;
+                @media (min-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .card-footer {
+                    width: 100%;
+                }
             }
         }
     }

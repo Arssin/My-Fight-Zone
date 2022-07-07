@@ -2,11 +2,9 @@
 
 .main-container {
     background-color: $main-container;
-    width: 100vw;
+    width: 100%;
 
     .container {
-        padding-left: 0.35rem;
-
         background-color: $container;
 
         @media (min-width: 768px) {
