@@ -19,12 +19,12 @@ export function CardSection() {
                             natural lead-in to additional content. This content
                             is a little bit longer.
                         </Card.Text>
+                        <Card.Footer>
+                            <small className="text-muted">
+                                Last updated 3 mins ago
+                            </small>
+                        </Card.Footer>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">
-                            Last updated 3 mins ago
-                        </small>
-                    </Card.Footer>
                 </Card>
                 <Card>
                     <Card.Img className="images" src={pictureCard} />
@@ -34,12 +34,12 @@ export function CardSection() {
                             This card has supporting text below as a natural
                             lead-in to additional content.{' '}
                         </Card.Text>
+                        <Card.Footer>
+                            <small className="text-muted">
+                                Last updated 3 mins ago
+                            </small>
+                        </Card.Footer>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">
-                            Last updated 3 mins ago
-                        </small>
-                    </Card.Footer>
                 </Card>
                 <Card>
                     <Card.Img className="images" src={pictureCard4} />
@@ -50,12 +50,12 @@ export function CardSection() {
                             natural lead-in to additional content. This content
                             is a little bit longer.
                         </Card.Text>
+                        <Card.Footer>
+                            <small className="text-muted">
+                                Last updated 3 mins ago
+                            </small>
+                        </Card.Footer>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">
-                            Last updated 3 mins ago
-                        </small>
-                    </Card.Footer>
                 </Card>
                 <Card>
                     <Card.Img className="images" src={pictureCard6} />
@@ -65,12 +65,12 @@ export function CardSection() {
                             This card has supporting text below as a natural
                             lead-in to additional content.{' '}
                         </Card.Text>
+                        <Card.Footer>
+                            <small className="text-muted">
+                                Last updated 3 mins ago
+                            </small>
+                        </Card.Footer>
                     </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">
-                            Last updated 3 mins ago
-                        </small>
-                    </Card.Footer>
                 </Card>
             </CardGroup>
         </div>

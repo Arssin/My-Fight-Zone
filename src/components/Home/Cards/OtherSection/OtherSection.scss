@@ -6,10 +6,10 @@
     order: 1;
     background-color: $main-container;
     color: white;
-    width: 50%;
 
     @media (min-width: 768px) {
         order: 2;
+        width: 30%;
     }
 
     .sectionDivs {

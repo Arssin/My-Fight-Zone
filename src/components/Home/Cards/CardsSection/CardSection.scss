@@ -1,4 +1,8 @@
+@import '../../../variables.scss';
+
 .cardSection {
+    padding: 1rem;
+    background-color: $main-container;
     order: 2;
     @media (min-width: 768px) {
         order: 1;
@@ -15,11 +19,17 @@
 
         .card {
             display: flex;
-            flex-direction: column;
+
+            @media (min-width: 768px) {
+                gap: 0.8rem;
+                flex-direction: row;
+            }
         }
     }
 
     .images {
-        width: 80%;
+        @media (min-width: 768px) {
+            width: 40%;
+        }
     }
 }
