@@ -4,6 +4,8 @@
     padding: 0.5rem;
     background-color: $main-container;
     order: 2;
+    border-radius: 0.25rem;
+
     @media (min-width: 768px) {
         order: 1;
         max-width: 70%;
@@ -19,7 +21,12 @@
         }
 
         .card {
-            display: flex;
+            @media (min-width: 576px) {
+                &:nth-child(n) {
+                    border: 2px solid white;
+                    border-radius: 0.25rem;
+                }
+            }
 
             @media (min-width: 768px) {
                 flex-direction: row;

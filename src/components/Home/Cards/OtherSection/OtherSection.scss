@@ -6,6 +6,7 @@
     order: 1;
     background-color: $main-container;
     color: white;
+    border-radius: 0.25rem;
 
     @media (min-width: 768px) {
         order: 2;
