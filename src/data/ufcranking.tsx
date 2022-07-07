@@ -26,9 +26,20 @@ export function DataFetching() {
             })
     }, [])
 
-    const kek = data.map((items) => items.fighters)
+    function topthree(value: any) {
+        return value <= 3
+    }
 
-    console.log(data)
-    console.log(kek)
-    return <div>{/* <ul>{kek}</ul> */}</div>
+    const kek = data.map((items) => items.fighters)
+    const heh = kek.map((kanyn) => kanyn[0].fullName)
+    const burak = heh.map((lul) => {
+        return <li>{lul}</li>
+    })
+    console.log(heh)
+    // console.log(kek)
+    return (
+        <div>
+            <ul>{burak}</ul>
+        </div>
+    )
 }
