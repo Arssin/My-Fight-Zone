@@ -42,9 +42,10 @@
 
     .carousel-indicators {
         margin-bottom: 0.1rem;
+        bottom: -20px;
     }
     .carousel-indicators [data-bs-target] {
-        background-color: rgb(91, 91, 138);
+        background-color: rgb(202, 107, 70);
         height: 4px;
     }
 }

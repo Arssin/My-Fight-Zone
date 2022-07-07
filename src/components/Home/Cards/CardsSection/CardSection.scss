@@ -1,0 +1,55 @@
+@import '../../../variables.scss';
+
+.cardSection {
+    padding: 0.5rem;
+    background-color: $main-container;
+    order: 2;
+    border-radius: 0.25rem;
+
+    @media (min-width: 768px) {
+        order: 1;
+        max-width: 70%;
+        padding: 1rem;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+            gap: 0.8rem;
+        }
+
+        .card {
+            @media (min-width: 576px) {
+                &:nth-child(n) {
+                    border: 2px solid white;
+                    border-radius: 0.25rem;
+                }
+            }
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
+
+            .card-body {
+                padding: 1rem 0 0 0;
+                @media (min-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .card-footer {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .images {
+        @media (min-width: 768px) {
+            width: 40%;
+        }
+    }
+}
