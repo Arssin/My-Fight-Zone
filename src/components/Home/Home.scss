@@ -1,13 +1,18 @@
+@import '../variables.scss';
+
 .main-container {
-    background-color: rgb(41, 40, 40);
+    background-color: $main-container;
+    width: 100vw;
 
     .container {
-        width: 100%;
-        background-color: rgb(53, 51, 51);
+        padding: 10px;
+        background-color: $container;
+
         @media (min-width: 768px) {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 10px 20px;
         }
     }
 }
