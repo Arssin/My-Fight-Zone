@@ -1,7 +1,11 @@
+@import '../../../variables.scss';
+
 .secondSection {
     display: flex;
+    flex-direction: column;
     order: 1;
-    background-color: white;
+    background-color: $main-container;
+    color: white;
     width: 50%;
 
     @media (min-width: 768px) {
