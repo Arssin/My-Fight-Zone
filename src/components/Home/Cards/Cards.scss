@@ -3,33 +3,8 @@
     flex-direction: column;
 
     @media (min-width: 768px) {
-        gap: 1.5rem;
+        gap: 1rem;
         margin-bottom: 1.5rem;
         flex-direction: row;
-    }
-
-    .card-group {
-        @media (min-width: 768px) {
-            display: flex;
-            gap: 0.8rem;
-        }
-    }
-
-    .cardSection {
-        order: 2;
-        @media (min-width: 768px) {
-            order: 1;
-        }
-    }
-
-    .secondSection {
-        display: flex;
-        order: 1;
-        background-color: white;
-        width: 40%;
-
-        @media (min-width: 768px) {
-            order: 2;
-        }
     }
 }

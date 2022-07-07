@@ -1,0 +1,12 @@
+.cardSection {
+    order: 2;
+    @media (min-width: 768px) {
+        order: 1;
+    }
+}
+
+.card-group {
+    @media (min-width: 768px) {
+        gap: 0.8rem;
+    }
+}

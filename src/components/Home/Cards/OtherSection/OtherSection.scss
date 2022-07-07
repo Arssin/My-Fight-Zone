@@ -1,0 +1,10 @@
+.secondSection {
+    display: flex;
+    order: 1;
+    background-color: white;
+    width: 50%;
+
+    @media (min-width: 768px) {
+        order: 2;
+    }
+}
