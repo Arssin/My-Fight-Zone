@@ -6,7 +6,7 @@ export function OtherSection() {
     return (
         <div className="secondSection">
             <div className="sectionDivs">
-                <div>Follow us!</div>
+                <p>Follow us!</p>
                 <div>
                     <BsLinkedin />
                     <BsGithub />
@@ -15,8 +15,8 @@ export function OtherSection() {
                 </div>
             </div>
             <div className="sectionDivs">
-                <a href="https://www.sts.pl/">
-                    <img className="ad" src={sts} alt="bet365 logo" />
+                <a href="https://www.sts.pl/" target="_blank" rel="noreferrer">
+                    <img className="ad" src={sts} alt="sts logo" />
                 </a>
             </div>
             <div className="sectionDivs">Champions</div>
