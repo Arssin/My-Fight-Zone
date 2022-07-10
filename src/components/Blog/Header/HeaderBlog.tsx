@@ -6,7 +6,7 @@ import './HeaderBlog.scss'
 export function HeaderBlog() {
     return (
         <div className="cards">
-            <Card>
+            <Card className="writerOne">
                 <Image src={avatar1} fluid roundedCircle className="picture" />
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
@@ -22,8 +22,7 @@ export function HeaderBlog() {
                     </blockquote>
                 </Card.Body>
             </Card>
-            <Card>
-                <Image src={avatar1} fluid roundedCircle className="picture" />
+            <Card className="writerTwo">
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
                         <p>
@@ -37,6 +36,7 @@ export function HeaderBlog() {
                         </footer>
                     </blockquote>
                 </Card.Body>
+                <Image src={avatar1} fluid roundedCircle className="picture" />
             </Card>
         </div>
     )
