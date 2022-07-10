@@ -1,23 +1,25 @@
 import Card from 'react-bootstrap/Card'
 import Image from 'react-bootstrap/Image'
 import avatar1 from '../../../images/avatar1.jpg'
+import avatar2 from '../../../images/duckavatar.jpg'
 import './HeaderBlog.scss'
 
 export function HeaderBlog() {
     return (
         <div className="cards">
+            <p className="title">Redactors Team</p>
             <Card className="writerOne">
                 <Image src={avatar1} fluid roundedCircle className="picture" />
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
+                        <p>Doggo</p>
                         <p>
                             {' '}
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Integer posuere erat a ante.{' '}
                         </p>
                         <footer className="blockquote-footer">
-                            Someone famous in{' '}
-                            <cite title="Source Title">Source Title</cite>
+                            <cite title="Source Title">Woof Woof</cite>
                         </footer>
                     </blockquote>
                 </Card.Body>
@@ -25,19 +27,25 @@ export function HeaderBlog() {
             <Card className="writerTwo">
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
+                        <p>Ninja Duck</p>
                         <p>
                             {' '}
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Integer posuere erat a ante.{' '}
                         </p>
                         <footer className="blockquote-footer">
-                            Someone famous in{' '}
-                            <cite title="Source Title">Source Title</cite>
+                            <cite title="Source Title">
+                                {' '}
+                                It is Better to be a ninja than a duck, unless
+                                you can be a duck ninja. Then the choice is
+                                simple.
+                            </cite>
                         </footer>
                     </blockquote>
                 </Card.Body>
-                <Image src={avatar1} fluid roundedCircle className="picture" />
+                <Image src={avatar2} fluid roundedCircle className="picture" />
             </Card>
+            <div className="line" />
         </div>
     )
 }
