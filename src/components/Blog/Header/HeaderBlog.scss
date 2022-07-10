@@ -49,6 +49,21 @@
         }
     }
 
+    .duck {
+        order: 1;
+
+        @media (min-width: 768px) {
+            order: 2;
+        }
+    }
+
+    .duckBody {
+        order: 2;
+
+        @media (min-width: 768px) {
+            order: 1;
+        }
+    }
     .card {
         align-items: center;
 
@@ -72,5 +87,17 @@
                 padding: 1rem 4.2rem;
             }
         }
+    }
+
+    .name {
+        margin: 0;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 800;
+        font-size: 1.3em;
+    }
+    .blockquote {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 }

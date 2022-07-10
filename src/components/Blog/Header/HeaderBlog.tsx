@@ -12,27 +12,19 @@ export function HeaderBlog() {
                 <Image src={avatar1} fluid roundedCircle className="picture" />
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
-                        <p>Doggo</p>
-                        <p>
-                            {' '}
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer posuere erat a ante.{' '}
-                        </p>
+                        <p className="name">Doggo</p>
+                        <p>*Wag his tail*</p>
                         <footer className="blockquote-footer">
-                            <cite title="Source Title">Woof Woof</cite>
+                            <cite title="Source Title"> Woof Woof 🦴</cite>
                         </footer>
                     </blockquote>
                 </Card.Body>
             </Card>
             <Card className="writerTwo">
-                <Card.Body>
+                <Card.Body className="duckBody">
                     <blockquote className="blockquote mb-0">
-                        <p>Ninja Duck</p>
-                        <p>
-                            {' '}
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer posuere erat a ante.{' '}
-                        </p>
+                        <p className="name">Ninja Duck</p>
+                        <p>Peace was never an option</p>
                         <footer className="blockquote-footer">
                             <cite title="Source Title">
                                 {' '}
@@ -43,7 +35,12 @@ export function HeaderBlog() {
                         </footer>
                     </blockquote>
                 </Card.Body>
-                <Image src={avatar2} fluid roundedCircle className="picture" />
+                <Image
+                    src={avatar2}
+                    fluid
+                    roundedCircle
+                    className="picture duck"
+                />
             </Card>
             <div className="line" />
         </div>
