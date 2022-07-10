@@ -9,6 +9,7 @@ import './CardSection.scss'
 export function CardSection() {
     return (
         <div className="cardSection">
+            <p className="title">🔥 HOT NEWS! 🔥</p>
             <CardGroup>
                 <Card>
                     <Card.Img className="images" src={pictureCard3} />
@@ -73,6 +74,7 @@ export function CardSection() {
                     </Card.Body>
                 </Card>
             </CardGroup>
+            <p className="more">WANT MORE? Go to Archive Articles </p>
         </div>
     )
 }

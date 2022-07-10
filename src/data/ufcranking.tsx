@@ -34,7 +34,7 @@ export function DataFetching() {
             <li key={index}>
                 {object[0].fullName}
                 <a href={`${object[0].url}`} key={object.id}>
-                    Profile
+                    UFC Profile
                 </a>
             </li>
         )
