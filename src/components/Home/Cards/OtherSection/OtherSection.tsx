@@ -1,5 +1,5 @@
 import { BsLinkedin, BsGithub, BsFacebook, BsInstagram } from 'react-icons/bs'
-import { DataFetching } from '../../../../data/ufcranking'
+import { DataFetching } from '../../../../data/Ufcranking'
 import sts from '../../../../images/stslogo.png'
 import githublogo from '../../../../images/githublogo.png'
 import './OtherSection.scss'
