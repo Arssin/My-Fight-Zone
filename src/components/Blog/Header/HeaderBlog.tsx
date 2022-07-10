@@ -13,7 +13,7 @@ export function HeaderBlog() {
                 <Card.Body>
                     <blockquote className="blockquote mb-0">
                         <p className="name">Doggo</p>
-                        <p>*Wag his tail*</p>
+                        <p className="description">*Wag his tail*</p>
                         <footer className="blockquote-footer">
                             <cite title="Source Title"> Woof Woof 🦴</cite>
                         </footer>
@@ -24,7 +24,7 @@ export function HeaderBlog() {
                 <Card.Body className="duckBody">
                     <blockquote className="blockquote mb-0">
                         <p className="name">Ninja Duck</p>
-                        <p>Peace was never an option</p>
+                        <p className="description">Peace was never an option</p>
                         <footer className="blockquote-footer">
                             <cite title="Source Title">
                                 {' '}

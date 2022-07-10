@@ -4,7 +4,8 @@ import { NavigationBar } from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
 import { Blog } from './components/Blog/Blog'
 import { Home } from './components/Home/Home'
-import { Shop } from './components/Shop/Shop'
+import { Archive } from './components/Archive/Archive'
+import { Contact } from './components/Contact/Contact'
 import './App.scss'
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
                     <Route path="/" element={<Welcome />} />
                     <Route path="/home" element={<Home />} />
                     <Route path="/blog" element={<Blog />} />
-                    <Route path="/shop" element={<Shop />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/archive" element={<Archive />} />
                 </Routes>
             </BrowserRouter>
             <Footer />
