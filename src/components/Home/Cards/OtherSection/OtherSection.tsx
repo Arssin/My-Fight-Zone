@@ -7,21 +7,42 @@ export function OtherSection() {
     return (
         <div className="secondSection">
             <div className="sectionDivs">
-                <p>Follow us!</p>
-                <div>
-                    <BsLinkedin />
-                    <BsGithub />
-                    <BsFacebook />
-                    <BsInstagram />
+                <p className="text">Follow us!</p>
+                <div className="iconsdiv">
+                    <a
+                        href="https://www.linkedin.com/in/mateusz-bini%C4%99da-818141209/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <BsLinkedin className="icons" />
+                    </a>
+                    <a
+                        href="https://github.com/Arssin"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <BsGithub className="icons" />
+                    </a>
+                    <a
+                        href="https://www.facebook.com/mateusz.binieda.14/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        {' '}
+                        <BsFacebook className="icons" />
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/songo_bjj/?hl=pl"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <BsInstagram className="icons" />
+                    </a>
                 </div>
             </div>
             <div className="sectionDivs">
-                <a
-                    href="https://www.sts.pl/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="anchors"
-                >
+                <a href="https://www.sts.pl/" target="_blank" rel="noreferrer">
                     <img className="ad" src={sts} alt="sts logo" />
                 </a>
                 <a

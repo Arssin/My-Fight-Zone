@@ -17,6 +17,28 @@
         margin: 0.9rem 0;
         width: 100%;
 
+        .text {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: rgb(235, 163, 80);
+        }
+
+        .iconsdiv {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .icons {
+                height: 2.5rem;
+                width: 2.5rem;
+                color: rgb(226, 241, 238);
+
+                &:hover {
+                    color: rgb(235, 163, 80);
+                }
+            }
+        }
+
         .ad {
             width: 90%;
             margin-bottom: 1.5rem;
