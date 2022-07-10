@@ -31,6 +31,7 @@ export function NavigationBar() {
                             <Nav.Link href="/home">Home</Nav.Link>
                             <Nav.Link href="blog">Blog</Nav.Link>
                             <Nav.Link href="blog">Articles Archive</Nav.Link>
+                            <Nav.Link href="/">Contact us</Nav.Link>
                             <NavDropdown
                                 title="Rankings"
                                 id="offcanvasNavbarDropdown-expand-lg"
